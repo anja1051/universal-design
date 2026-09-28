@@ -1,4 +1,5 @@
    <!-- writing ! and clicking tab will generate a basic HTML structure for you when starting out -->
+<!-- DO NOT USE DIVS - NO SEMANTIC VALUE TO THIS TAG -->
 </body>
 </html>
 <!DOCTYPE html> <!-- You need this to ensure the browser renders the page in standards mode -->
@@ -9,6 +10,7 @@
 <title>Semantic Basics</title> <!-- This is the title of your page -->
 
 </head>
+
 <body>
   <h1>Semantic Basics</h1>
   <nav>
@@ -28,7 +30,25 @@
     <p>lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
 </section>
+<!-- <figcaption></figcaption> -->
+<figure> <!-- semantic grouping of content -->
+    <img src="hipster.jpg" alt="A hipster image">
+    <figcaption>
+        <h2>Hipster Image</h2>
+    </figcaption>
+</figure>
+<aside>
+<h2>Aside</h2>
+<p>this is an aside section</p>
+</aside>
 </main>
+
+<footer>
+    <h2>Footer</h2>
+    <p>this is a footer section</p>
+    <address> anja.delzell@colorado.edu</address>
+    <small>&copy; 2023 Your Name. All rights reserved.</small>
+</footer>
  </body>
  <!-- Main content of the page -->
 

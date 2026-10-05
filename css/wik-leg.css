@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Isometra&display=swap');
+
+.wrapper {
+    max-width: 100ch;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+body {
+    font-family: "Poppins";
+}
+
+h1, h2, h3, h4 {
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+}
+
+body {
+    background-color: #98cbe9;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.49rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+
+.no-bullet {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+nav ul li a:link{
+    color: rgb(0, 0, 0);
+}
+
+nav ul li a:visited{
+    color: rgb(0, 0, 0);
+}
+nav ul li a:hover{
+    background: #bababa;
+    font-weight: 900;
+}   
+nav ul li a:active{
+    color: rgb(255, 255, 255);
+}

@@ -132,3 +132,39 @@ td {
 th {
     font-weight: bold;
 }
+
+/* Forms */
+form {
+    margin-bottom: 50px;
+}
+fieldset {
+    border: 1px solid black;
+    margin-bottom: 50px;
+}
+
+input:focus {
+    outline: 2px solid blue;
+}
+
+input:user-valid {
+    border: 2px solid green;
+}
+
+input:user-invalid {
+    border: 2px solid red;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+fieldset label {
+    display: block;
+    margin-bottom: 15px;
+}
+
+fieldset input {
+    display: block;
+    margin-top: 5px;
+}

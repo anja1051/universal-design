@@ -18,7 +18,8 @@
     <nav aria-label="Book index">
         <h2>Books</h2>
         <ul>
-            <li class="no-bullet"><span aria-hidden="true" class="material-icons">menu_book</span><a href="#rec-notes">Recommended Reading Notes</a> </li>
+            <li class="no-bullet"><span aria-hidden="true" class="material-icons">menu_book</span><a
+                    href="#rec-notes">Recommended Reading Notes</a> </li>
             <li class="no-bullet"><span aria-hidden="true" class="material-icons">menu_book</span><a href="#book-1">The
                     Little Liar — Mitch Albom</a> </li>
             <li class="no-bullet"><span aria-hidden="true" class="material-icons">menu_book</span><a href="#book-2">The
@@ -39,7 +40,8 @@
                     href="#book-9">Behind Every Good Man — Sara Goodman Confino</a></li>
             <li class="no-bullet"><span aria-hidden="true" class="material-icons">menu_book</span><a
                     href="#book-10">Finding Freedom — Erin French</a></li>
-            <li class="no-bullet"><span aria-hidden="true" class="material-icons">menu_book</span><a href="#book-table">Table about Reading List</a> </li>
+            <li class="no-bullet"><span aria-hidden="true" class="material-icons">menu_book</span><a
+                    href="#book-table">Table about Reading List</a> </li>
 
             <!-- <li><span aria-hidden="true" class="material-icons">menu_book</span><a href="#book-11">Lessons in Chemistry — Bonnie Garmus</a></li>
             <li><span aria-hidden="true" class="material-icons">menu_book</span><a href="#book-12">Memoirs of a Geisha — Arthur Golden</a></li>
@@ -166,7 +168,7 @@
                 and her Maine restaurant, The Lost Kitchen.</p>
             <p><a href="https://www.goodreads.com/search?q=Finding%20Freedom%20Erin%20French">Find on Goodreads</a></p>
         </article>
-    
+
         <table id="book-table">
             <h2>Table of Books Recommended</h2>
             <thead>
@@ -240,6 +242,40 @@
                 </tr>
             </tbody>
         </table>
+        <fieldset>
+            <legend>Give us your information</legend>
+            <label for="username">
+                What is your username?
+                <input type="text" id="username" required>
+            </label>
+            <label for="email">
+                What is your email?
+                <input type="email" id="email" required>
+            </label>
+            <label for="password">
+                What is your password?
+                <input type="password" id="password" required maxlength="20" minlength="8"
+                    pattern="(?=.\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a#$%^&+!=]).*" required>
+                <label>
+                    <ul class="input requirements">Password must contain at least one digit, one lowercase letter, one
+                        uppercase letter, and one special character.</ul>
+                </label>
+            </label>
+
+            <label for="website">
+                What is your favorite book?
+                <input type="url" id="website">
+            </label>
+            <label for="age">
+                What is your age?
+                <input type="number" id="age" min="0" max="120">
+            </label>
+            <label for="phone">
+                What is your phone number?
+                <input type="tel" id="phone" minlength="7">
+            </label>
+            <input type="submit" value="Submit">
+        </fieldset>
     </main>
 </body>
 

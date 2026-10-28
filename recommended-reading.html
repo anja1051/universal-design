@@ -42,6 +42,8 @@
                     href="#book-10">Finding Freedom — Erin French</a></li>
             <li class="no-bullet"><span aria-hidden="true" class="material-icons">menu_book</span><a
                     href="#book-table">Table about Reading List</a> </li>
+            <li class="no-bullet"><span aria-hidden="true" class="material-icons">menu_book</span><a
+                    href="#book-form">Book form to fill out</a> </li>
 
             <!-- <li><span aria-hidden="true" class="material-icons">menu_book</span><a href="#book-11">Lessons in Chemistry — Bonnie Garmus</a></li>
             <li><span aria-hidden="true" class="material-icons">menu_book</span><a href="#book-12">Memoirs of a Geisha — Arthur Golden</a></li>
@@ -242,7 +244,7 @@
                 </tr>
             </tbody>
         </table>
-        <fieldset>
+        <fieldset id="book-form">
             <legend>Give us your information</legend>
             <label for="username">
                 What is your username?
@@ -256,15 +258,15 @@
                 What is your password?
                 <input type="password" id="password" required maxlength="20" minlength="8"
                     pattern="(?=.\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a#$%^&+!=]).*" required>
-                <label>
-                    <ul class="input requirements">Password must contain at least one digit, one lowercase letter, one
-                        uppercase letter, and one special character.</ul>
-                </label>
             </label>
+            <p class="password_information">
+            <ul class="input requirements">Password must contain at least one digit, one lowercase letter, one
+                uppercase letter, and one special character.</ul>
+            </p>
 
-            <label for="website">
+            <label for="book">
                 What is your favorite book?
-                <input type="url" id="website">
+                <input type="text" id="book">
             </label>
             <label for="age">
                 What is your age?

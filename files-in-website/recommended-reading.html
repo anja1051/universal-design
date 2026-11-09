@@ -5,16 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anja's Recommended Reading List</title>
+    <link href="../css/recommended-reading.css" rel="stylesheet">
 </head>
 
 <body class="wrapper">
     <a class="skip-link" href="#main-content">Skip to main content</a>
     <header>
         <h1>Anja's Recommended Reading List</h1>
-        <link href="css/recommended-reading.css" rel="stylesheet">
+
         <!-- rel stylesheet means that the css file is linked to the 
          html file and it will be used to style the html elements.-->
     </header>
+
     <nav aria-label="Book index">
         <h2>Books</h2>
         <ul>
@@ -44,6 +46,8 @@
                     href="#book-table">Table about Reading List</a> </li>
             <li class="no-bullet"><span aria-hidden="true" class="material-icons">menu_book</span><a
                     href="#book-form">Book form to fill out</a> </li>
+            <li class="no-bullet"><span aria-hidden="true" class="material-icons">menu_book</span><a href="#links">Links
+                    to Other Pages</a> </li>
 
             <!-- <li><span aria-hidden="true" class="material-icons">menu_book</span><a href="#book-11">Lessons in Chemistry — Bonnie Garmus</a></li>
             <li><span aria-hidden="true" class="material-icons">menu_book</span><a href="#book-12">Memoirs of a Geisha — Arthur Golden</a></li>
@@ -162,122 +166,144 @@
                     Goodreads</a></p>
         </article>
         <article id="book-10">
-            <h1>Finding Freedom</h1>
-            <h2>Erin French</h2>
-            <h3>Rating: 4.25 / 5</h3>
-            <h3>Genre: Memoir, Food</h3>
+            <h2>Finding Freedom</h2>
+            <h3>Erin French</h3>
+            <h4>Rating: 4.25 / 5</h4>
+            <h4>Genre: Memoir, Food</h4>
             <p>Chef Erin French describes overcoming painful setbacks and rebuilding her life through food, community,
                 and her Maine restaurant, The Lost Kitchen.</p>
             <p><a href="https://www.goodreads.com/search?q=Finding%20Freedom%20Erin%20French">Find on Goodreads</a></p>
         </article>
-
-        <table id="book-table">
-            <h2>Table of Books Recommended</h2>
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Author</th>
-                    <th>Genre</th>
-                    <th>Rating</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>The Little Liar </td>
-                    <td>Mitch Albom </td>
-                    <td>Rating: 4.55 / 5 </td>
-                    <td>Genre: Historical Fiction </td>
-                </tr>
-                <tr>
-                    <td>The Handmaid's Tale </td>
-                    <td>Margaret Atwood </td>
-                    <td>Rating: 4.16 / 5 </td>
-                    <td>Genre: Dystopian Fiction </td>
-                </tr>
-                <tr>
-                    <td>The Water Knife </td>
-                    <td>Paolo Bacigalupi </td>
-                    <td>Rating: 3.85 / 5 </td>
-                    <td>Genre: Science Fiction, Climate Fiction </td>
-                </tr>
-                <tr>
-                    <td>My Friends </td>
-                    <td>Fredrik Backman </td>
-                    <td>Rating: 4.30 / 5 </td>
-                    <td>Genre: Literary Fiction </td>
-                </tr>
-                <tr>
-                    <td>The Answer Is No </td>
-                    <td>Fredrik Backman </td>
-                    <td>Rating: 3.90 / 5 </td>
-                    <td>Genre: Fiction, Humor </td>
-                </tr>
-                <tr>
-                    <td>When Women Were Dragons </td>
-                    <td>Kelly Barnhill </td>
-                    <td>Rating: 3.80 / 5 </td>
-                    <td>Genre: Fantasy, Feminism </td>
-                </tr>
-                <tr>
-                    <td>It Would Be Night in Caracas </td>
-                    <td>Karina Sainz Borgo </td>
-                    <td>Rating: 3.72 / 5 </td>
-                    <td>Genre: Literary Fiction </td>
-                </tr>
-                <tr>
-                    <td>If All Else Sails</td>
-                    <td>Emma St. Clair</td>
-                    <td>Rating: 3.99 / 5</td>
-                    <td>Genre: Romantic Comedy</td>
-                </tr>
-                <tr>
-                    <td>Behind Every Good Man</td>
-                    <td> Sara Goodman Confino</td>
-                    <td>4.25/5</td>
-                    <td>Historical Fiction</td>
-                </tr>
-                <tr>
-                    <td>Finding Freedom</td>
-                    <td>Erin French</td>
-                    <td>Rating: 4.25 / 5</td>
-                    <td>Genre: Memoir, Food</td>
-                </tr>
-            </tbody>
+        <section id="book-table">
+            <!-- <h2>Table of Books Recommended</h2> -->
+            <table>
+                <caption>Books Recommended</caption>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Author</th>
+                        <th>Rating</th>
+                        <th>Genre</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>The Little Liar </td>
+                        <td>Mitch Albom </td>
+                        <td>Rating: 4.55 / 5 </td>
+                        <td>Genre: Historical Fiction </td>
+                    </tr>
+                    <tr>
+                        <td>The Handmaid's Tale </td>
+                        <td>Margaret Atwood </td>
+                        <td>Rating: 4.16 / 5 </td>
+                        <td>Genre: Dystopian Fiction </td>
+                    </tr>
+                    <tr>
+                        <td>The Water Knife </td>
+                        <td>Paolo Bacigalupi </td>
+                        <td>Rating: 3.85 / 5 </td>
+                        <td>Genre: Science Fiction, Climate Fiction </td>
+                    </tr>
+                    <tr>
+                        <td>My Friends </td>
+                        <td>Fredrik Backman </td>
+                        <td>Rating: 4.30 / 5 </td>
+                        <td>Genre: Literary Fiction </td>
+                    </tr>
+                    <tr>
+                        <td>The Answer Is No </td>
+                        <td>Fredrik Backman </td>
+                        <td>Rating: 3.90 / 5 </td>
+                        <td>Genre: Fiction, Humor </td>
+                    </tr>
+                    <tr>
+                        <td>When Women Were Dragons </td>
+                        <td>Kelly Barnhill </td>
+                        <td>Rating: 3.80 / 5 </td>
+                        <td>Genre: Fantasy, Feminism </td>
+                    </tr>
+                    <tr>
+                        <td>It Would Be Night in Caracas </td>
+                        <td>Karina Sainz Borgo </td>
+                        <td>Rating: 3.72 / 5 </td>
+                        <td>Genre: Literary Fiction </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <tr>
+            <td>If All Else Sails</td>
+            <td>Emma St. Clair</td>
+            <td>Rating: 3.99 / 5</td>
+            <td>Genre: Romantic Comedy</td>
+        </tr>
+        <tr>
+            <td>Behind Every Good Man</td>
+            <td> Sara Goodman Confino</td>
+            <td>4.25/5</td>
+            <td>Historical Fiction</td>
+        </tr>
+        <tr>
+            <td>Finding Freedom</td>
+            <td>Erin French</td>
+            <td>Rating: 4.25 / 5</td>
+            <td>Genre: Memoir, Food</td>
+        </tr>
+        </tbody>
         </table>
-        <fieldset id="book-form">
-            <legend>Give us your information</legend>
-            <label for="username">
-                What is your username?
-                <input type="text" id="username" required>
-            </label>
-            <label for="email">
-                What is your email?
-                <input type="email" id="email" required>
-            </label>
-            <label for="password">
-                What is your password?
-                <input type="password" id="password" required maxlength="20" minlength="8"
-                    pattern="(?=.\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a#$%^&+!=]).*" required>
-            </label>
-            <p class="password_information">
-            <ul class="input requirements">Password must contain at least one digit, one lowercase letter, one
-                uppercase letter, and one special character.</ul>
-            </p>
+        <section id="book-form">
+            <h2>Book Form</h2>
+            <form>
+                <fieldset>
+                    <legend>Give us your information</legend>
+                    <label for="username">
+                        What is your username?
+                        <input type="text" id="username" required>
+                    </label>
+                    <label for="email">
+                        What is your email?
+                        <input type="email" id="email" required>
+                    </label>
+                    <label for="password">
+                        What is your password?
+                        <input type="password" id="password" aria-describedby="password-requirements" required maxlength="20" minlength="8"
+                            pattern="(?=.\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a#$%^&+!=]).*" required>
+                    </label>
+                    <p class="password_information" id="password-requirements">
+                        Password must contain at least one digit, one lowercase letter, one
+                        uppercase letter, and one special character.
+                    </p>
 
-            <label for="book">
-                What is your favorite book?
-                <input type="text" id="book">
-            </label>
-            <label for="age">
-                What is your age?
-                <input type="number" id="age" min="0" max="120">
-            </label>
-            <label for="phone">
-                What is your phone number?
-                <input type="tel" id="phone" minlength="7">
-            </label>
-            <input type="submit" value="Submit">
-        </fieldset>
+                    <label for="book">
+                        What is your favorite book?
+                        <input type="text" id="book">
+                    </label>
+                    <label for="age">
+                        What is your age?
+                        <input type="number" id="age" min="0" max="120">
+                    </label>
+                    <label for="phone">
+                        What is your phone number?
+                        <input type="tel" id="phone" minlength="7">
+                    </label>
+                    <input type="submit" value="Submit">
+                </fieldset>
+            </form>
+        </section>
+        <section id="links">
+            <h2>Other Pages</h2>
+            <nav aria-label="Other Page Navigation">
+                <ul class="no-bullet">
+                    <li><a href="wikepidia-page.html">
+                            My semantics practice page: Studio Ghibli Wikipedia Page
+                        </a></li>
+                    <li><a href="index.html">
+                            My Homepage
+                        </a></li>
+                </ul>
+            </nav>
+        </section>
     </main>
 </body>
 

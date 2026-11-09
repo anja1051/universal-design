@@ -1,0 +1,44 @@
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+nav a {
+    display: inline-block;
+    padding: 5px;
+}
+
+nav a:focus-visible {
+    outline: 3px solid #000000;
+    outline-offset: 3px;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    align-items: center;
+}
+
+.profile-photo {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+@media (max-width: 600px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-photo {
+        max-width: 100%;
+    }
+}

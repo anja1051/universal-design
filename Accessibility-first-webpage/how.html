@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="Accessibility-first-webpage-css/all.css" rel="stylesheet">
-    <link href="Accessibility-first-webpage-css/how.css" rel="stylesheet">
+    <!-- <link href="Accessibility-first-webpage-css/how.css" rel="stylesheet"> -->
     <title>Index Page</title>
 </head>
 
@@ -24,9 +24,91 @@
             <li><a href="what.html">What is accessibility?</a></li>
         </ul>
     </nav>
+    <nav class="page-navigation" aria-label="Page Navigation">
+        <h2 class="sr-only">Page Navigation</h2>
+        <ul>
+            <li><a href="#intro">Introduction</a></li>
+            <li><a href="#meaningfulstruct">Meaningful Structure</a></li>
+            <li><a href="#designchoices">Design Choices</a></li>
+            <li><a href="#testing">Testing</a></li>
+            <li><a href="#how-grid">How to Grid </a></li>
+        </ul>
+    </nav>
 
     <main id="main-content">
-        
+        <section id="intro">
+            <h2>Introduction</h2>
+            <p>Accessible design begins with understanding who we need to make our app accessible for. Our app
+                should probably be accessible to all potential users so we want to make it compatible with screen
+                readers, we want to make the text size large enough for visual impairments, we want to make it so
+                the website is tabbable for issues with mobility and so much more. Once we understand the different
+                ways we need to make our website accessible we can begin to create it.
+            </p>
+        </section>
+        <section id="meaningfulstruct">
+            <h2>Meaningful Structure</h2>
+            <p>We can use meaningful structure with html, building appropriate headings in logical order, labeling
+                everything properly and including aria labels when appropriate to give accessible names, and have a
+                skip to the main content section. We need to make sure we are following the guidelines for
+                accessible forms and data tables. If we have an image or video included in our website we should
+                write meaningful alternate text (captions) and add an option for subtitles to our videos. When users
+                zoom in on a page all of the content should remain accessible to the user. We can avoid using divs
+                instead of appropriate semantic elements and other unclear structures and test our structure with
+                programs like html5 outliner. </p>
+        </section>
+        <section id="designchoices">
+            <h2>Design Choices</h2>
+            <p>We can also make sure our design choices are accessible. We can make font sizes large enough, use
+                enough color contrast, use icons that people will understand, and make sure button sizes are large
+                enough. Everything should be navigable by a keyboard and we should test our websites on screen
+                readers to see if they are understandable. Our website should have keyboard focus so users can see
+                where they are on our website.
+            </p>
+        </section>
+        <section id="testing">
+            <h2>Testing</h2>
+            <p> When we have completed all of these we can test to see how accessible our website is with an
+                extension like silktide or wave. It is also very helpful to be able to test with individuals who do
+                use assistive technologies or have disabilities to see if they can interact well with your page.
+            </p>
+        </section>
+        <section id="grid">
+            <div class="how-grid">
+                <article class="how-article">
+                    <h3>Design Choices</h3>
+                    <ul id="bullet">
+                        <li>Increase font size</li>
+                        <li>Improve color contrast</li>
+                        <li>Use icons that people will understand</li>
+                        <li>Increase button size and clickable area size</li>
+                        <li>Make the website keyboard navigable</li>
+                        <li>Maintain readability when users zoom in</li>
+                    </ul>
+                </article>
+                <article class="how-article">
+                    <h3>Meaningful Structure</h3>
+                    <ul id="bullet">
+                        <li>Use meaningful structure in HTML</li>
+                        <li>Build appropriate heading hierarchies</li>
+                        <li>Use proper labels and ARIA labels where appropriate</li>
+                        <li>Include a skip-to-main-content link</li>
+                        <li>Use appropriate semantic HTML elements</li>
+                        <li>Provide alternative text for images</li>
+                        <li>Include captions on videos</li>
+                    </ul>
+                </article>
+                <article class="how-article">
+                    <h3>Testing Tools</h3>
+                    <ul id="bullet">
+                        <li>HTML5 Outliner</li>
+                        <li>Silktide</li>
+                        <li>WAVE Accessibility Evaluation Tool</li>
+                        <li>Adobe Color Contrast Checker</li>
+                        <li>Test the website with potential users who have accessibility needs</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
     </main>
 
     <footer>

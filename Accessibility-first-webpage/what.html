@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Accessibility-first-webpage-css/all.css" rel="stylesheet">
+    <link href="Accessibility-first-webpage-css/what.css" rel="stylesheet">
+    <title>Index Page</title>
+</head>
+
+<body>
+    <a class="skip-link" href="#main-content">
+        Skip to main content
+    </a>
+    <header>
+        <h1>What is Accessible Web Design?</h1>
+    </header>
+    <nav class="main-navigation" aria-label="Main Navigation">
+        <h2 class="sr-only">Main Navigation</h2>
+        <ul class="no-bullet">
+            <li><a href="a-index.html">Home</a></li>
+            <li><a href="why.html">Why is accessibility important?</a></li>
+            <li><a href="how.html">How do I build an accessible webpage?</a></li>
+        </ul>
+    </nav>
+    <nav class="page-navigation" aria-label="Page Navigation">
+        <h2 class="sr-only">Page Navigation</h2>
+        <ul>
+            <li><a href="#definition">Definition of Accessible Web Design</a></li>
+            <li><a href="#purpose">Purpose of Accessible Web Design</a></li>
+            <li><a href="#goal">Goal of Accessible Web Design</a></li>
+            <li><a href="#7principles">The Seven Principles of Universal Design</a></li>
+            <li><a href="#Users">Users of Accessible Web Design</a></li>
+            <li><a href="#Standards">Standards for Accessible Web Design</a></li>
+            <li><a href="#Regulations">Regulations for Accessible Web Design</a></li>
+            <!-- <li><a href="#technologies">Technologies Available for Accessible Web Design</a></li> -->
+
+        </ul>
+
+    </nav>
+    <main id="main-content">
+        <section id="definition">
+            <h2>Definition of Accessible Web Design</h2>
+            <p>Accessible web design is the process of creating websites and other online media that is accessible
+                (people can navigate, understand and use) for individuals with different abilities.
+            </p>
+        </section>
+        <section id="purpose">
+            <h2>Purpose of Accessible Web Design</h2>
+            <p>The purpose of accessibility is making designs accessible for all people to interact with. We create
+                accessible designs because we want individuals of any ability to be able to participate in and interact
+                with society. As computers, cell phones, and other electronic devices have become an integral part of
+                society, we need designs that make it possible for everyone to be included in our society.
+            </p>
+        </section>
+        <section class="special-section" id="goal">
+            <h2>Goal of Accessible Web Design</h2>
+            <p>Our goal as web developers, designers, and computer scientists should be to make websites accessible for
+                all, no matter what. One of the best ways to do this is to develop projects that already integrate
+                accessible designs the first time around. We should be prioritizing accessibility in our original
+                designs, not slapping it on later when someone complains about it. It is not complicated to integrate
+                accessibility into our projects the first time around and we need to make this a universal choice. </p>
+        </section>
+
+        <section id="7principles">
+            <h2>Seven Principles of Universal Design</h2>
+
+            <p>Here are the seven principles of Universal design From the online text Roadmap to Web Accessibility in
+                Higher Education:</p>
+
+            <div class="principles-grid">
+
+                <article class="principle-card">
+                    <h3>Equitable Use</h3>
+                    <p>Design provides the same means of use for anyone accessing resources: identical whenever
+                        possible, equivalent when not.</p>
+                </article>
+
+                <article class="principle-card">
+                    <h3>Flexibility in Use</h3>
+                    <p>Design accommodates a wide range of individual preferences and abilities. (e.g., left or right
+                        handed access and use.)</p>
+                </article>
+
+                <article class="principle-card">
+                    <h3>Simple &amp; Intuitive Use</h3>
+                    <p>Design is easy to understand, regardless of the user’s experience, knowledge, language skills, or
+                        current concentration level.</p>
+                </article>
+
+                <article class="principle-card">
+                    <h3>Perceptible Information</h3>
+                    <p>Design communicates necessary information effectively to the user, regardless of ambient
+                        conditions or the user’s sensory abilities.</p>
+                </article>
+
+                <article class="principle-card">
+                    <h3>Tolerance for Error</h3>
+                    <p>Design minimizes hazards and the adverse consequences of accidental or unintended actions.</p>
+                </article>
+
+                <article class="principle-card">
+                    <h3>Low Physical Effort</h3>
+                    <p>Design can be used efficiently and comfortably. (e.g., online classes allow consumption of
+                        information with little eye strain and fatigue.)</p>
+                </article>
+
+                <article class="principle-card">
+                    <h3>Size &amp; Space for Approach &amp; Use</h3>
+                    <p>Design provides for approach, reach, manipulation, and use regardless of user’s body size,
+                        posture, or mobility. (e.g., online learning platforms allow for the use/integration of
+                        assistive devices such as a JAWS reader.)</p>
+                </article>
+
+            </div>
+        </section>
+        <section id="Users">
+            <h2>Users of Accessible Web Design</h2>
+            <p> There are many users of accessible web design, including people with disabilities, people with temporary
+                impairments, and people with situational limitations. Here are some examples of a potential user below:
+            </p>
+            <ul>
+                <li>Visual Impairment from blindness, to low vision, to colorblindness</li>
+                <li>Hearing Impairment from deafness to hard of hearing</li>
+                <li>Motor Impairment like limited fine motor control, limited movement, paralysis, cerebral palsy, and
+                    arthritis</li>
+                <li>Cognitive Impairment like learning disabilities, distractibility, dyslexia, and inability to
+                    remember or focus on large amounts of information</li>
+                <li>Invisible Disabilities like chronic pain, mental health conditions, and neurological disorders</li>
+            </ul>
+            <p>We need to account for all of these impairments and disabilities on our websites. Many of these
+                impairments require separate types of fixes and we need to make sure we are accounting for all possible
+                users. Sometimes we will design a website that makes it difficult for one of these groups to use. Nobody
+                is perfect and these things happen, but we should make changes to our website if we realize it will
+                cause struggles for one of these groups.
+            </p>
+
+        </section>
+        <section id="Standards">
+            <h2>Standards for Accessible Web Design</h2>
+            <h3>WCAG 2.2 Standards</h3>
+            <ul>
+                <li>
+                    WCAG 2.2 is developed through the World Wide Web Consortium (W3C)
+                    through its Web Accessibility Initiative (WAI). It is the current
+                    accessibility standard. It is organized around four main principles
+                    known as <strong>POUR</strong>:
+                    <ul>
+                        <li><strong>Perceivable:</strong> Information must be presented
+                            in a way that all users can perceive.</li>
+                        <li><strong>Operable:</strong> Users must be able to operate the
+                            interface. For example, websites should support keyboard
+                            navigation, visible focus indicators, and interactions that
+                            don't require precise mouse movement.</li>
+                        <li><strong>Understandable:</strong> Content and navigation
+                            should be predictable and understandable.</li>
+                        <li><strong>Robust:</strong> Websites should work reliably in
+                            different browsers and with different technologies.</li>
+                    </ul>
+                </li>
+
+                <li>
+                    The WCAG standard contains three compliance levels:
+                    <ul>
+                        <li><strong>Level A:</strong> Foundational accessibility
+                            requirements.</li>
+                        <li><strong>Level AA:</strong> Additional accessibility
+                            requirements addressing common accessibility barriers.</li>
+                        <li><strong>Level AAA:</strong> The highest level, containing
+                            additional demanding requirements.</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <p>Level AA is used as a technical benchmark for many accessibility
+                regulations.</p>
+        </section>
+        <section id="Regulations">
+            <h2>Regulations for Accessible Web Design</h2>
+            <div class="table-container">
+                <table>
+                    <caption>Overview of Accessibility Regulations</caption>
+
+                    <thead>
+                        <tr>
+                            <th scope="col">Regulation</th>
+                            <th scope="col">Who It Applies To</th>
+                            <th scope="col">Requirements</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <th scope="row">ADA Title II</th>
+                            <td>State and local governments.</td>
+                            <td>
+                                Government websites and mobile apps must be accessible
+                                to people with disabilities. Examples include support
+                                for screen readers and keyboard navigation.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">ADA Title III</th>
+                            <td>Covered private businesses and places open to the public.</td>
+                            <td>
+                                Businesses must provide people with disabilities equal
+                                access to their goods and services. This includes online
+                                services, but the regulation does not specify a particular
+                                WCAG version.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Rehabilitation Act, Section 508</th>
+                            <td>Federal government agencies.</td>
+                            <td>
+                                Federal websites, documents, and software must be
+                                accessible. Generally, this is associated with WCAG 2.0
+                                Level AA.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Rehabilitation Act, Section 504</th>
+                            <td>Organizations receiving federal financial assistance.</td>
+                            <td>
+                                People with disabilities must have equal access to
+                                federally funded programs and services. For example,
+                                students must be able to access course materials and
+                                assignments.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Colorado HB21-1110</th>
+                            <td>Colorado state and local government agencies.</td>
+                            <td>
+                                Government websites must be accessible. The standards
+                                incorporate WCAG 2.1 Levels A and AA.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Accessibility-first-webpage. All rights reserved.</p>
+    </footer>
+</body>

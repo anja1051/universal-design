@@ -47,9 +47,9 @@ p {
             width: 1px;
         }
 
-@media (min-width: 650px) {
+/* @media (min-width: 650px) {
 
-}
+} */
 nav ul{
     display: flex;
     flex-direction: column;

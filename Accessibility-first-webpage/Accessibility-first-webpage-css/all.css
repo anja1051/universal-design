@@ -211,11 +211,6 @@ main section p {
     margin-top: 0;
 }
 
-/* .how-article ul {
-    max-width: none;
-    text-align: left;
-    margin-bottom: 0;
-} */
 .how-article ul {
     display: block;
     list-style-type: disc;

@@ -180,10 +180,10 @@
                 <caption>Info on Name, Title, Genre and Rating of Books Recommended, in an easy to read table</caption>
                 <thead>
                     <tr>
-                        <th>Name</th>
-                        <th>Author</th>
-                        <th>Rating</th>
-                        <th>Genre</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Author</th>
+                        <th scope="col">Rating</th>
+                        <th scope="col">Genre</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -259,15 +259,15 @@
                     <legend>Give us your information</legend>
                     <label for="username">
                         What is your username?
-                        <input type="text" id="username" required>
+                        <input type="text" id="username" autocomplete="user-name"required>
                     </label>
                     <label for="email">
                         What is your email?
-                        <input type="email" id="email" required>
+                        <input type="email" id="email" autocomplete="email" required>
                     </label>
                     <label for="password">
                         What is your password?
-                        <input type="password" id="password" aria-describedby="password-requirements" required
+                        <input type="password" id="password" autocomplete="current-password" aria-describedby="password-requirements" required
                             maxlength="20" minlength="8" pattern="(?=.\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a#$%^&+!=]).*"
                             required>
                     </label>
@@ -278,15 +278,15 @@
 
                     <label for="book">
                         What is your favorite book?
-                        <input type="text" id="book">
+                        <input type="text" id="book" autocomplete="book-title">
                     </label>
                     <label for="age">
                         What is your age?
-                        <input type="number" id="age" min="0" max="120">
+                        <input type="number" id="age" autocomplete="age" min="0" max="120">
                     </label>
                     <label for="phone">
                         What is your phone number?
-                        <input type="tel" id="phone" minlength="7">
+                        <input type="tel" id="phone" autocomplete="phone" minlength="7">
                     </label>
                     <input type="submit" value="Submit">
                 </fieldset>

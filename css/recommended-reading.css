@@ -138,12 +138,17 @@ th {
 /* Forms */
 form {
     margin-bottom: 50px;
+    
 }
 fieldset {
-    border: 1px solid black;
+    border: 2px solid black;
     margin-bottom: 50px;
 }
-
+input{
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 4px;
+}
 input:focus {
     outline: 2px solid blue;
 }
